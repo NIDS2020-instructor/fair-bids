@@ -1,8 +1,28 @@
 # NIDS FAIR data / BIDS
 
-You can access any of the lecture Jupyter notebooks by clicking on the associated "Launch Binder" badge.
+
+
+You can either run everything on your computer after following the environment setup below (recommended), or you can access the lecture Jupyter notebook simply by clicking on the "Launch Binder" badge (cf instructions below)).
+
+# Running the lecture Jupyter notebook online on Binder
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/fair-bids/HEAD?filepath=heudiconv_data2bids.ipynb)
+
+To run the lecture Jupyter notebook online on Binder:
+* Click on the "Launch binder" badge above (better to right click and then open in a new tab)
+* Once the notebook is ready, display a terminal by:
+  * selecting on the top left `File` --> `Open...`
+  * selecting on the top right of the newly displayed page `New` -->  `Terminal`
+* You can follow along the notebook, and in the terminal you could for example type the following set of commands
+  ```bash
+  $ cd heudiconv_data
+  $ heudiconv -d Dicom/{subject}/*/*.dcm -o bids/ -f convertall -s 219 -c none
+  $ ls bids/.heudiconv/
+  $ mkdir bids/code
+  $ cp ../solutions/heuristic_v1.py bids/code/
+  $ heudiconv -d Dicom/{subject}/*/*.dcm -o bids/ -f bids/code/heuristic_v1.py -s 219 -c dcm2niix -b --minmeta --overwrite
+  $ ls bids/sub-219/
+  ```
 
 # How to setup your own coding environment at home ?
 
