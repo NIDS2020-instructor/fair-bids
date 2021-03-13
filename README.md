@@ -119,7 +119,7 @@ To run the lecture Jupyter notebook online on Binder:
     cd NIDS
     git clone https://github.com/NIDS2020-instructor/fair-bids.git
     ```
-  * Start Visual Studio code, click on `File` --> `Open Folder` and then choose `python-series` (inside `NIDS`), click `OK`
+  * Start Visual Studio code, click on `File` --> `Open Folder` and then choose `fair-bids` (inside `NIDS`), click `OK`
   * In a terminal (a linux terminal but not the one provided by VS Code to keep it free), start a Jupyter notebook after making sure you are in the default `base` conda environment:
     ```
     cd
