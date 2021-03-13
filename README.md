@@ -129,7 +129,7 @@ To run the lecture Jupyter notebook online on Binder:
     jupyter notebook
     ```
   * A page should automatically open in your internet browser. If you cannot find it or it does not happen, read the output on the terminal and copy the URL indicated inside a tab of your internet browser
-  * To start a Python lecture notebook, click on its name in the list of files which is displayed in the Jupyter page of your browser (e.g. choose `python_part3.ipynb`)
+  * To start a Python lecture notebook, click on its name in the list of files which is displayed in the Jupyter page of your browser (e.g. choose `heudiconv_data2bids.ipynb`)
   * Then choose the right conda environment by clicking on `Kernel` -> `Change Kernel` and selecting an environment with all the required packages 
 
 In case of any problem or if you have any question, please ask on Slack (after your very first message, please immediately hover on it and click on the chat buble to `Reply in thread` for  all your messages to be in a single thread), thank you !
